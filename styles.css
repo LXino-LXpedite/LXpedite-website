@@ -1,0 +1,1 @@
+:root { --primary-color: #e63946; } body { background-color: #000; color: white; } .hero { background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); } .cta-button { background-color: var(--primary-color); }
