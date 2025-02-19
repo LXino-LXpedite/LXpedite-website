@@ -124,6 +124,18 @@ nav {
     margin-bottom: 2rem;
 }
 
+.hero-highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.4rem !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -301,18 +313,46 @@ nav {
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.contact-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
-.contact-item a {
+.contact-text {
+    flex: 1;
+}
+
+.contact-note {
     color: var(--primary-color);
-    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.contact-list li:before {
+    content: "→";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1rem;
 }
 
 /* Footer */
@@ -347,6 +387,13 @@ footer {
     color: var(--accent-color);
 }
 
+.footer-highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -375,6 +422,19 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .hero-highlight {
+        font-size: 1.2rem !important;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+    }
+    
+    .contact-list {
+        padding-left: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -388,6 +448,11 @@ footer {
     
     .features .container {
         grid-template-columns: 1fr;
+    }
+
+    .hero-highlight {
+        font-size: 1rem !important;
+        padding: 0.3rem 0.6rem;
     }
 }
 
