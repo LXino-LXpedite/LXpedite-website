@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LXpedite - Fast and affordable delivery service in Laredo, TX. We offer local deliveries, furniture moving, and emergency services.">
+    <meta name="description" content="LXPedite - Fast and affordable delivery service in Laredo, TX. Local & long-distance deliveries, furniture moving, and 24/7 emergency services. Free quotes available!">
+    <meta name="keywords" content="delivery service, Laredo TX, moving service, furniture delivery, emergency delivery, same day delivery">
+    <meta name="author" content="LXPedite">
+    <meta property="og:title" content="LXPedite - Fast & Affordable Delivery Service in Laredo">
+    <meta property="og:description" content="Professional delivery service in Laredo. Local & long-distance, furniture moving, and 24/7 emergency services. Free quotes available!">
+    <meta property="og:image" content="image/sprinter-van.jpg">
+    <meta property="og:url" content="https://lxpedite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <title>LXpedite - Fast & Affordable Delivery Service in Laredo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,142 +23,177 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>LXpedite</h1>
+                <h1>LX<span class="gradient-text">pedite</span></h1>
             </div>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="tel:+19569992944" class="cta-button">Call Now</a>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="tel:+19569992944" class="nav-cta">
+                        <i class="fas fa-phone"></i> (956) 999-2944
+                    </a>
+                </li>
+                <li>
+                    <label class="theme-toggle">
+                        <input type="checkbox" id="theme-checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <h1>LX<span class="gradient-text">pedite</span></h1>
+            </div>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:9569992944" class="mobile-cta">
+                <i class="fas fa-phone"></i> Call Now: (956) 999-2944
+            </a>
+            <div class="theme-toggle-mobile">
+                <label class="theme-toggle">
+                    <input type="checkbox" id="theme-checkbox-mobile">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </div>
+
     <main>
+        <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <h1>Fast & Affordable Delivery Service in Laredo!</h1>
+                <h1>Fast & Affordable<br>Delivery Service in<br>Laredo!</h1>
                 <div class="hero-highlights">
-                    <p>Fast & Cheaper Than Other Movers</p>
-                    <p>No Hidden Fees - Transparent Pricing</p>
-                    <p>Same-Day & Last-Minute Service Available!</p>
+                    <div class="glass">
+                        <p><i class="fas fa-bolt"></i> Fast & Cheaper Than Other Movers</p>
+                    </div>
+                    <div class="glass">
+                        <p><i class="fas fa-check-circle"></i> No Hidden Fees - Transparent Pricing</p>
+                    </div>
+                    <div class="glass">
+                        <p><i class="fas fa-clock"></i> After Hours Available: 6PM-10PM</p>
+                    </div>
                 </div>
                 <div class="cta-buttons">
-                    <a href="tel:+19569992944" class="primary-button">Call Now</a>
-                    <a href="sms:+19569992944" class="secondary-button">Text for FREE Quote</a>
+                    <a href="tel:+19569992944" class="button button-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="sms:+19569992944" class="button button-secondary">
+                        <i class="fas fa-comment"></i> Text for FREE Quote
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- Services Section -->
         <section id="services">
-            <h2>SERVICES</h2>
+            <h2 class="gradient-text">SERVICES</h2>
             <div class="service-grid">
-                <div class="service-card">
+                <div class="service-card glass">
                     <i class="fas fa-truck"></i>
                     <h3>Local Deliveries</h3>
                     <p class="service-subtitle">(Short Trips - Under 20 Miles)</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass">
                     <i class="fas fa-route"></i>
-                    <h3>Long-Distance</h3>
+                    <h3>Long - Distance</h3>
                     <p class="service-subtitle">Pickup & Delivery</p>
                 </div>
-            </div>
-
-            <div class="pricing-section">
-                <div class="pricing-card">
-                    <h3>Flat-Rate Pricing (For Common Jobs)</h3>
+                <div class="service-card glass">
+                    <i class="fas fa-list"></i>
+                    <h3>Flat - Rate Pricing (For Common Jobs)</h3>
                     <ul class="service-list">
-                        <li>Furniture & Appliance Delivery</li>
-                        <li>Small Moves (Light Items, No Heavy Lifting)</li>
-                        <li>Junk Removal & Haul-Away:
-                            <span class="note">(Based on size/Disposal fee)(Trailer not Van)</span>
-                        </li>
-                        <li>Package & Grocery Delivery</li>
+                        <li>-Furniture & Appliance Delivery</li>
+                        <li>-Small Moves (Light Items,No Heavy Lifting)</li>
+                        <li>-Junk Removal & Haul - Away:</li>
+                        <li class="sub-item">(Based on size/Disposal fee)(Trailer not Van)</li>
+                        <li>-Package & Grocery Delivery</li>
                     </ul>
                 </div>
-                <div class="pricing-card">
-                    <h3>Hourly Rate</h3>
-                    <p>(For Labor-Intensive Jobs)</p>
-                </div>
-            </div>
-
-            <div class="business-info">
-                <div class="hours-section">
+                <div class="service-card glass">
+                    <i class="fas fa-clock"></i>
                     <h3>Hours of Operation:</h3>
-                    <p>Mon-Sat: 7AM-6PM</p>
-                    <p class="highlight">Emergency/After-Hour Service Available!</p>
+                    <p class="service-subtitle">Mon-Sat: 7AM-6PM</p>
+                    <div class="emergency-service">
+                        <p>Emergency/</p>
+                        <p>After-Hour</p>
+                        <p>Service</p>
+                        <p>Available!</p>
+                    </div>
                 </div>
-                <div class="payments-section">
+                <div class="service-card glass">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call/Text:</h3>
+                    <p class="phone-number">(956) 999-2944</p>
+                </div>
+                <div class="service-card glass payment-methods">
                     <h3>Payments Accepted:</h3>
-                    <div class="payment-methods">
-                        <span><i class="fas fa-money-bill"></i> Cash</span>
-                        <span><i class="fab fa-cc-visa"></i> Zelle</span>
-                        <span><i class="fab fa-venmo"></i> Venmo</span>
+                    <div class="payment-list">
+                        <span>Cash</span>
+                        <span class="separator">$</span>
+                        <span>Zelle</span>
+                        <span class="separator">$</span>
+                        <span>Venmo</span>
+                        <span class="separator">$</span>
+                        <span>Cash App</span>
                     </div>
-                    <p class="note">*Delay Fees ask for more information</p>
-                </div>
-            </div>
-
-            <div class="highlight-box">
-                <p>Fast & Cheaper Than Other Movers</p>
-                <p>No Hidden Fees - Transparent Pricing</p>
-                <p>Same-Day & Last-Minute Service Available!</p>
-                <p class="cta-text">For More Information Feel Free to</p>
-                <p class="cta-phone">Call/Text (956) 999-2944 for a FREE QUOTE!</p>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About LXpedite</h2>
-            <div class="about-content">
-                <p>LXpedite is Laredo's premier delivery service, committed to providing fast, reliable, and affordable solutions for all your delivery needs. We take pride in our professional service and customer satisfaction.</p>
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <span>Fast Service</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Reliable</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-dollar-sign"></i>
-                        <span>Affordable</span>
-                    </div>
+                    <p class="delay-note">*Delay Fees ask for more information</p>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item glass">
                         <i class="fas fa-phone"></i>
                         <div class="contact-text">
-                            <p>Call or Text us at: <a href="tel:+19569992944">(956) 999-2944</a></p>
-                            <p class="contact-note">Free quotes available!</p>
+                            <h3>Call or Text</h3>
+                            <p><a href="tel:+19569992944">(956) 999-2944</a></p>
+                            <p class="contact-note">After Hours Available: 6PM-10PM</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-comment-dots"></i>
+                    <div class="contact-item glass">
+                        <i class="fas fa-clock"></i>
                         <div class="contact-text">
-                            <p>Text us for:</p>
+                            <h3>Business Hours</h3>
                             <ul class="contact-list">
-                                <li>Quick quotes</li>
-                                <li>Scheduling</li>
-                                <li>Service inquiries</li>
+                                <li>Monday - Saturday: 7AM - 6PM</li>
+                                <li>After Hours: 6PM - 10PM</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <p>Available 24/7 for Emergency Services</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Serving Laredo, TX and surrounding areas</p>
+                    <div class="contact-item glass">
+                        <i class="fas fa-money-bill"></i>
+                        <div class="contact-text">
+                            <h3>Payment Methods</h3>
+                            <ul class="contact-list">
+                                <li>Cash</li>
+                                <li>Zelle</li>
+                                <li>Venmo</li>
+                                <li>Cash App</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,25 +203,43 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>LXpedite</h3>
-                <p>Your trusted delivery partner in Laredo, TX</p>
+                <h3 class="gradient-text">LXPedite</h3>
+                <p>Fast, reliable, and affordable delivery services in Laredo, TX.</p>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3 class="gradient-text">Quick Links</h3>
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Call or Text: (956) 999-2944</p>
-                <p>Available 24/7</p>
-                <p class="footer-highlight">Free Quotes Available!</p>
+                <h3 class="gradient-text">Contact</h3>
+                <p class="footer-highlight">(956) 999-2944</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 LXpedite. All rights reserved.</p>
+            <p>&copy; 2024 LXPedite. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle-wrapper">
+        <label class="theme-switch" for="theme-checkbox">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </span>
+        </label>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 
